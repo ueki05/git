@@ -1,0 +1,10 @@
+git config --global user.name "Your Name" # あなたの名前をGitのグローバル設定に追加
+git config --global user.email "Your E-mail Address" # あなたのメールアドレスをGitのグローバル設定に追加
+git config --list # すべてのGit設定を表示
+git config user.name # user.nameの既定値を表示
+git config user.email # user.emailの既定値を設定
+git help help # Gitヘルプシステムのヘルプ
+git help -a # Gitで利用できる全コマンドのリスト
+git --paginate help -a # すべてのGitコマンドをページで表示
+git help -g # すべてのGitガイドを表示
+git help glossary # Gitの用語集(glossary)を表示

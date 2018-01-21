@@ -1,0 +1,5 @@
+git rm FILE # ファイルをステージングエリアから削除（remove）する
+git mv FILE1 FILE2  # ステージングエリアで、FILE1の名前をFILE2に変更する
+git add -p  # ステージングエリアに追加（add）すべき変更部分を手作業で選択（pick）する
+git reset FILE  # ステージングエリアをリセット（reset）して、ファイルをコミット予定から外す
+git checkout FILE # ファイルの「最後にコミットしたバージョン」をチェックアウトして、localの作業ディレクトリに入れる

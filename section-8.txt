@@ -1,0 +1,12 @@
+git log --parents # ヒストリー表示。個々のコミットで、親コミットのSHA1 IDも表示する。
+git log --parents --abbrev-commit # ヒストリー表示。個々のコミットで、親コミットのSHA1 IDも短縮表示する。
+git log --oneline # ヒストリーを簡潔に（各コミットを1行で）表示する
+git log --patch # ヒストリー表示。個々のコミットにおけるファイルの差分を示す。
+git log --stat  # ヒストリー表示。個々のコミットの間で変更されたファイルの概要を示す。
+git log --patch-with-stat # ヒストリー表示。patchとstatの出力を組み合わせる。
+git log --oneline FILE  # FILEのヒストリーを表示する
+git rev-parse # ブランチ名またはタグ名を、特定のSHA1 IDに変換する
+git checkout YOUR_SHA1ID  # 作業ディレクトリを、YOUR_SHA1IDで指定されたバー読んと一致するものに変更する
+git tag TAG_NAME -m "MESSAGE" YOUR_SHA1ID # YOUR_SHA1IDを参照するTAG_NAMEという名のタグを作る。このタグには短いメッセージ（MESSAGE）が割り当てられる
+git tag # すべてのタグのリストを出力する
+git show TAG_NAME # TAG_NAMEというタグに関する情報を示す

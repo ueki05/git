@@ -1,0 +1,13 @@
+git branch  # すべてのブランチのリストを表示
+git branch dev  # devという名前のブランチを新規に作成する
+git checkout dev  # 作業ディレクトリを変更して、devという名前のブランチを反映させる
+git branch -d master  # masterという名前のブランチを削除する
+git log --graph --decorate --pretty=oneline --all --abbrev-commit # リポジトリの履歴をすべてのブランチを通じて閲覧する
+git config --global alias.lol "log --graph --decorate --pretty=oneline --all --abbrev-commit" # git logコマンドのためにlolという名前の別名（alias）を作る
+git branch -v # すべてのブランチのリストをSHA1ID情報を付けて表示
+git branch fixing_readme YOUR_SHA1ID  # YOUR_SHA1IDを開始地点としてブランチfix_readmeを作る
+git checkout -b another_fix_branch fixing_readme  # ブラにtfix_readmeを開始地点としてブランチanother_fix_branchを作り、即座にチェックアウトする
+git reflog  # これまでに（git checkoutによって）行ったブランチ切替のすべての記録を表示する
+git stash # 現在進行中の作業（WIP）をスタッシュ（安全な隠し場所）に入れて、git checkoutを実行できるようにする
+git stash list  # スタッシュに対比させたWIPのリストを表示
+git stash pop # 最後にスタッシュに入れた内容を現在の作業ディレクトリに反映させ、スタッシュから消去する

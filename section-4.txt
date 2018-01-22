@@ -1,0 +1,7 @@
+git init  # カレントディレクトリ内のGitリポジトリを初期化
+git status  # Gitに関するカレントディレクトリの状態を表示
+git add FILE  # ファイルをGitに追跡させる（ファイルはステージングエリアに追加される）
+git commit -m "Message" # 変更をGitリポジトリにコミットし、メッセージを付ける
+git log # Gitリポジトリのログ（ヒストリー）を表示
+git log --stat  # ログとともに、変更されたファイルを表示する
+git ls-files  # リポジトリ内のファイルをリスト表示

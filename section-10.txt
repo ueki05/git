@@ -1,0 +1,7 @@
+git diff BRANCH1...BRANCH2  # BRANCH1とBRANCH2の差分を最初に違いが現れた場所から相対的に示す
+git diff --name-status BRANCH1...BRANCH2  # BRANCH1とBRANCH2の違いをそれぞれのファイルとその状態のリストによって要約する
+git merge BRANCH2 # BRANCH2を現在の（カレント）ブランチにマージする
+git log - 1 # git log -n 1の短縮形（最新のコミットだけを表示する）
+git mergetool # 2つの統合するブランチの間でマージを実行するのに役立つ外部ツールを開く
+git merge--abort  # 2つ競合するブランチ感のマージを中止にする
+git merge-base BRANCH1 BRANCH2  # BRANCH1とBRANCH2に共通するベースコミットを表示する

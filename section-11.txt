@@ -1,0 +1,6 @@
+git clone SOURCE DESTINATION_DIR  # ソースの位置にあるGitリポジトリのクローンを、複製先ディレクトリに作る
+git log --oneline --all # すべてのブランチから、すべてのコミットログエントリを表示する（通常のgit logは、カレントブランチからのエントリだけを表示する）
+git log --simplify-by-decoration --decorate --all --oneline # ヒストリーを、簡略形式で表示する
+git branch --all  # ローカルブランチだけでなく、リモート追跡ブランチも表示する
+git clone --bare SOURCE DESTINATION_DIR # ソースの位置にあるGitリポジトリのクローンを、複製先ディレクトリに、ペアリポジトリとして作る（複製先ディレクトリの名前は、規約に従って .gitで終わるようにする）
+git ls-tree HEAD  # HEADのすべてのファイルを表示する

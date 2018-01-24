@@ -1,0 +1,12 @@
+git push origin master  # masterブランチをoriginという名前のリモートにプッシュする
+git push  # 現在のブランチを、デフォルトのリモート追跡ブランチにプッシュする。デフォルトは、git checkoutまたはgit push --set-upstreamにより設定される
+git push --set-upstream origin new_branch # originという名前のリモートにあるnew_branchへのリモート追跡ブランチを作成する
+git config --get-regexp branch  # 名前にbranchという言葉が含まれているGit構成設定のリストを表示する
+git branch -d localbranch # localbranchという名前のローカルブランチを削除する
+git push origin :remotebranch # remotebranchという名前のリモートブランチを、originという名前のリモートから削除する
+git tag -a TAG_NAME -m TAG_MESSAGE SHA1ID # SHA1IDにタグを付ける。タグ名にTAG_NAME、メッセージにTAG_MESSAGEを使う
+git push origin TAGNAME # TAGNAMEという名前のタグを、originという名前のリモートにプッシュする
+git push --tags # すべてのタグをデフォルトのリモートにプッシュする
+git push origin :TAGNAME  # originという名前のリモートから、TAGNAMEという名前のタグを削除する
+git git tag -d TAGNAME  # originという名前のリモートから、TAGNAMEという名前のタグを削除する
+git config --global push.default simple # Git構成のpush.defaultを、simpleという値に設定する。これは、アクセスできるすべてのリポジトリに（グローバルに）設定される

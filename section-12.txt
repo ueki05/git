@@ -1,0 +1,6 @@
+git checkout -f master  # masterブランチをチェックアウトする。現在のブランチに変更があれば、それらは破棄される。
+git remote  # 現在のリポジトリにあるリモートの名前を表示する
+git remote -v show  # リモートの名前を、対応するリモートURLとともに表示する
+git remote add bob ../math.bob  # botという名前のリモートを追加する。そのリモートは、ローカルリポジトリ../math.bobを指し示す。
+git ls-remote REMOTE  # リモートリポジトリREMOTEのリファレンスを表示する（現在のローカルリポジトリを指定するには、REMOTEとして . を使う）
+GIT_TRACE_PACKET=1 git ls-remote REMOTE # リモートとのネットワーク通信の内容を表示する

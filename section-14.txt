@@ -1,0 +1,4 @@
+git pull  # リポジトリと上流リポジトリと同期させる（git fetchとgit mergeの2つで構成される)
+git fetch # リモートリポジトリから新しいコミットが取り込まれ、リモート追跡ブランチが更新される
+git merge FETCH_HEAD  # FETCH_HEADからの新しいコミットを、カレントブランチにマージする
+git pull --ff-only  # --ff-onlyスイッチを指定すると、FETCH_HEADがカレントブランチの子孫である場合に限り、マージが許可される（fast-forwardマージ)

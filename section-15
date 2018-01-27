@@ -1,0 +1,17 @@
+git log --merges  # マージの結果であるコミットのリストを表示
+git log --oneline FILE  # FILEに影響を与えたコミットのリストを表示
+git log --grep=STRING # コミットメッセージがSTRINGを含んでいるコミットのリストを表示
+git log --since MM/DD/YYYY --until MM/DD/YYYY # 2つの日付の間に作られたコミットのリストを表示
+git shortlog  # 著者名によるコミットの要約
+git shortlog -e # 著者名によるコミットの要約で、メールアドレスも表示する
+git log --author=AUTHOR # AUTHORを著者とするコミットのリスト（名前とメールアドレスを表示）
+git log --stat HEAD^..HEAD  # 現在のコミットと、その親の間にあるコミット（と、そのファイル）のリスト
+git log --patch HEAD^..HEAD # 現在のコミットと、その親の間にあるコミット（と、テキストの変更）のリスト
+git branch --column # すべてのブランチのリストをコラムに分けて表示する
+git name-rev SHA1_ID  # 指定したSHA1_IDの名前を最も近いブランチをベースとして表示する
+git branch -r --contains SHA1_ID  # 指定のSHA1_IDを含む、すべてのブランチを識別する（-rはリモート追跡ブランチを指定する。これを略すとローカルブランチだけが表示される）
+git grep STRING # STRINGを含む、すべてのファイルを探し出す
+git gui blame FILE  # FILEのgit blame出力をGit GUIで表示される（それぞれの行で、どのコミットから来たのかを表示させる）
+git gui browser REV # GUIブラウザで、REVというリビジョンのすべてのファイルを表示させる（たとえば現在の作業ディレクトリならば、REVにHEADを使うことができる）
+git blame FILE  # FILEのblame出力をコマンドラインで表示する
+git --no-pager blame FILE > FILE-annotate # FILEのblame出力をコマンドラインで、FILE-annotateに保存する

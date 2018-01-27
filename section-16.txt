@@ -1,0 +1,6 @@
+git log --oneline master..new_feature # masterブランチの先で、new_featureブランチまでにあるkミットを表示
+git rebase master # masterの最新コミットをカレントブランチにリベースする
+git reflog  # reflog（HEADの変更をすべて記録した内部履歴）を表示
+git reset --hard HEAD@{n} # HEAD@{n}によって表現されるSHA1_IDを指し示すように、HEADをリセット。--hardスイッチは、ステージングエリアと作業ディレクトリの両方をリセットする
+git rebase --interactive master # masterの最新コミットをカレントブランチに、対話処理でリベースする。これによってエディタが開き、どのコミットをリベースに含めるかの取捨選択が可能となる
+git cherry-pick SHA1ID  # 指定のコミットをカレントブランチにコピーする

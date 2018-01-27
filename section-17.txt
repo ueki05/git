@@ -1,0 +1,2 @@
+git commit --allow-empty -m "initial commit"  # ファイルの追加なしにコミットを作る
+git merge --no-ff BRANCH  # BRANCHをカレントブランチにマージし、たとえfast-forwardであっても、マージコミットを作成する

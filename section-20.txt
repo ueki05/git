@@ -1,0 +1,11 @@
+git config --local --list # ローカル（リポジトリ固有の）Git構成をリストで表示
+git config --global --list  # グローバル（ユーザー固有の）Git構成をリストで表示
+git config --system --list  # システム（サーバー全体の）Git構成をリストで表示
+git -c log.date=relative log -n 2 # 相対的な日付フォーマットで最後の２つのコミットを表示
+git config --local log.date relative  # 相対的な日付フォーマットをローカルGit構成に保存
+git config --local --edit # ローカル（リポジトリ固有の）Git構成を編集する
+git config --global --edit  # グローバル（ユーザー固有の）Git構成を編集する
+git config --system --edit  # システム（サーバー全体の）Git構成を編集する
+git -c core.editor=echo config --local --edit # ローカルGit構成ファイルの名前をプリントする
+git -c core.editor=vim config --local --edit  # ローカルGit構成vimで編集する
+git config core.excludesfile  # Git構成core.excludesfileの設定値をプリントする
